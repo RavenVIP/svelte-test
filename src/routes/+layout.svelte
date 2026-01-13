@@ -1,11 +1,10 @@
-<script>
-	import favicon from '$lib/assets/favicon.svg';
+<nav
+  style="display:flex; gap:12px; padding:12px; border-bottom:1px solid #ddd;"
+>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+</nav>
 
-	let { children } = $props();
-</script>
-
-<svelte:head>
-	<link rel="icon" href={favicon} />
-</svelte:head>
-
-{@render children()}
+<main style="padding:16px;">
+  <slot />
+</main>
